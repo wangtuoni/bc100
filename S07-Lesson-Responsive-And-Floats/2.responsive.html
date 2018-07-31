@@ -4,9 +4,43 @@
 		<title>Responsive</title>
 		<link rel="stylesheet" href="css/styles.css">
 		<style>
-			.box {
-				/*opacity: 0.7;*/
+			@media screen and (min-width:400px){
+				body{background-color: white;}
 			}
+			@media screen and (min-width:600px){
+				body{background-color: blue;}
+			}
+
+
+			article{
+				background-color: pink;
+			}
+			aside{
+				background-color: lightgrey;
+				padding: 15px;
+			}
+
+			@media screen and (min-width:800px) {
+				article{
+					width: 420px;
+					float: left;
+				}
+				aside{
+					width: 160px;
+					float: right;
+				}
+			}
+
+			footer{
+				clear: both;
+			}
+			img{
+				width: 100%;
+			}
+			.clearme{
+				clear: both;
+			}
+
 		</style>
 	</head>
 	<body>
@@ -69,6 +103,7 @@
 						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 					</p>
 				</aside>
+				<div class="clearme"></div>
 			</main>
 			<footer>FOOTER</footer>
 		</div>
