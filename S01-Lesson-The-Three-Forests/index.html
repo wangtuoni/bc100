@@ -1,0 +1,57 @@
+<!-- This is an HTML Comment, ignored by browser, good for taking notes -->
+<!-- Doctype: Tells the browser what type of document this is, usually HTML -->
+<!DOCTYPE html>
+<!-- HTML is the house for our web page, it contains everything -->
+<html>
+	<!-- Head is behind the scenes, describes the page meta, and connects to scripts. -->
+	<head>
+		<title>The 3 Forests</title>
+		<meta name="description" content="This is my Website, hear me roar.">
+		<style>
+			h1{
+				background-color: orange;
+			}
+			h2{
+				background-color: green;
+			}
+			h3{
+			  background-color: lime;
+			}
+			p{
+				background-color: red;
+				font-size: large;
+				padding: 40px;
+				margin: 30px;
+			}
+		</style>
+		<script type="text/javascript">
+			console.log("i am wang xu");
+    window.onload=function(){
+			var moon  = document.getElementById("moon");
+
+			moon.addEventListener("mouseover",function(){moon.src="sun.png";});
+
+			moon.addEventListener("mouseout",function(){moon.src="moon.png";});
+		}
+
+		 var sun = document.getElementById("sun");
+		 sun.addEventListener("click",function(){sun.src="moon.png";});
+		 sun.addEventListener("dbclick",function(){sun.src="sun.png";});
+
+		</script>
+	</head>
+	<!-- Body is synonymous with the Visible Document inside of our Viewport -->
+	<body>
+		<!-- Anything you put in the body, shows up in the document, and therefpre the viewport. -->
+		<h1>The 3 Forests</h1>
+    <h2>subheading</h2>
+		<h3>another heading</h3>
+		<h4>heading 4</h4>
+		<img id="moon" src="moon.png" width="300">
+		<img id="sun" src="sun.png" width="300">
+		<p>
+			hellohellohellohellohellohellohellohellohellohellohellohello.<br>
+			hellohellohello<a href="http://apple.com">APPLE LINK</a>hellohellohellohellohellohellohellohellohello
+		</p>
+	</body>
+</html>

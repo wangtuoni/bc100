@@ -1,0 +1,14 @@
+body { background-color: #333; }
+.wrapper {
+	background-color: #eee;
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 25px;
+}
+h1{
+	background-color: green;
+}
+img{
+	border: solid 10px red;
+}

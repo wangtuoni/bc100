@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sprites :: CSS Navigations</title>
+		<link rel="stylesheet" href="css/styles.css">
+		<style type="text/css">
+        	nav.sprites a{
+        		background-image: url("img/2-sprite.png");
+				background-position: 0px 0px;
+
+				width: 300px;
+				height: 84;
+
+				font-size: 20px;
+				color: white;
+				text-align: center;
+
+				display: block;
+				line-height: 84px;
+				text-decoration: none;
+				text-transform: uppercase;
+				transition: all 5s;
+        	}
+
+			.sprites a:hover{
+				background-position: -300px 0px;
+				transition: all 1s.
+			}
+		</style>
+    </head>
+    <body>
+		<div class="container">
+			<header>Sprites</header>
+
+			<nav class="primary">
+				<a class="nav1" 			href="nav-1-bg-images.html">Nav 1</a>
+				<a class="nav2 youAreHere" 	href="nav-2-sprites.html">Nav 2</a>
+				<a class="nav3" 			href="nav-3-one-sprite.html">Nav 3</a>
+			</nav>
+
+			<article>
+				<nav class="sprites">
+					<a class="home" 				href="#">Home</a>
+					<a class="about theChosenOne" 	href="#">About</a>
+					<a class="gallery" 				href="#">Gallery</a>
+					<a class="contact" 				href="#">Contact Us</a>
+				</nav>
+			</article>
+		</div>
+    </body>
+</html>

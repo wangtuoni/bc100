@@ -1,0 +1,64 @@
+/*-------------------------------------
+| Standrd Styles
+-------------------------------------*/
+body {
+	background-color: #333; margin: 30px;
+	font-family: Helvetica, Arial, sans-serif;
+}
+.container {
+	background-color: #eee;
+	padding: 15px 25px 30px;
+	width: 900px;
+	margin: auto;
+	border-radius:5px;
+}
+header {
+	background-color: #008080;
+	color: #fff;
+	font-size: 50px;
+	line-height: 200px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+article {
+	margin-top: 50px;
+	border-top: solid 1px #ccc;
+	padding: 25px;
+	background: #fff;
+}
+article nav  {
+	margin: 50px 0px;
+	background-color: #caf1f1;
+	padding: 10px;
+}
+
+/*-------------------------------------
+| Primary Shared Menu Styles Go Here.
+-------------------------------------*/
+.primary{
+	text-align: center;
+}
+
+.primary a{
+	background-color: lightblue;
+	color: black;
+	width: 100px;
+	height: 50px;
+	padding: 20px;
+	margin: 10px;
+	display: inline-block;
+}
+
+.primary a:hover{
+	background-color: pink;
+	color: green;
+}
+
+.primary a:active{
+	background-color: lime;
+}
+
+.primary a.youAreHere{
+	background-color: white;
+	color: black;
+}

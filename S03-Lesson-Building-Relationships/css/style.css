@@ -1,0 +1,38 @@
+body{
+    background-color: tan;
+    width: 700px;
+    margin: auto;
+}
+header{
+    background-color: teal;
+    padding: 20px;
+    text-align: center;
+    font-size: 50px;
+}
+footer{
+    background-color: teal;
+    padding: 20px;
+    text-align: center;
+    font-size: 10px;
+}
+nav{
+    background-color: maroon;
+    padding: 20px;
+    text-align: center;
+}
+a{
+    color: white;
+}
+main{
+    background-color: white;
+    padding: 20px;
+}
+div{
+    text-align: center;
+}
+img{
+    width: 30%;
+}
+img.big{
+    width: 50%;
+}

@@ -1,0 +1,82 @@
+body{
+    background-color: gray;
+}
+p{
+    background-color: yellow;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 20px;
+    border: solid 5px purple;
+}
+#firstpar{
+    background-color: orange;
+}
+.xiang-cio{
+    font-size: 10px;
+    border: solid 5px red;
+}
+#container{
+    background-color: white;
+    width: 800px;
+    margin: auto;
+    padding: 25px;
+}
+header{
+    padding: 20px;
+    background-color: teal;
+}
+nav{
+    padding: 20px;
+    background-color: #73804c;
+}
+main{
+    padding: 20px;
+    background-color: #625f80;
+}
+#downnav{
+    padding: 20px;
+    background-color: #a73636;
+}
+footer{
+    padding: 20px;
+    background-color: teal;
+}
+
+
+#gallery{
+    background-color: yellow;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+img.gallery-image{
+    width: 170px;
+    padding: 20px;
+    background-color: white;
+    border: solid 5px black;
+}
+
+#boxes{
+    background-color: red;
+    padding: 20px;
+    border: solid 10px yellow;
+    margin: 25px;
+
+    text-align: center;
+}
+.box{
+    background-color: blue;
+    padding: 20px;
+    margin: 20px;
+    border: solid 10px green;
+
+    width: 100px;
+    height: 100px;
+
+
+}
+.alternate{
+    background-color: pink;
+}

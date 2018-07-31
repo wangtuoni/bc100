@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Proximity And Specificity :: The Cascade</title>
+        <link rel="stylesheet" href="./css/styles.css">
+        <style>
+            .wrapper img#id{
+                border: 10px solid black;
+            }
+            .wrapper img.class{
+                border: 20px solid red;
+            }
+
+            h1{background-color: yellow;}
+            h1{background-color: blue;}
+
+            img{border: solid 10px yellow;}
+            img{border: solid 20px red;}
+
+            .class{border: 10px solid red;}
+            .class{border: 10px solid black;}
+
+            #id{border: 20px solid pink;}
+            #id{border: 30px dotted yellow;}
+
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <h1>The Cascade</h1>
+            </header>
+            <nav>
+                <a href="1.three-selectors.html">3 Selectors</a>
+                <a href="2.descendants.html">Descendants</a>
+                <a href="3.prox-spec.html">Prox. &amp; Spec.</a>
+            </nav>
+            <main>
+                <h1>Proximity And Specificity</h1>
+                <img id="id" class="class" src="./img/5.png">
+            </main>
+            <footer>&copy; 2018. All rights reserved.</footer>
+        </div>
+    </body>
+</html>

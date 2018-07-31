@@ -1,0 +1,84 @@
+/*-------------------------------------
+| Core
+-------------------------------------*/
+body {
+	margin: 25px;
+	background-color: #333;
+	display: flex;
+	justify-content: center;
+	font-family: sans-serif;
+}
+.container {
+	background-color: #eee;
+	padding: 25px;
+	width: 700px;
+}
+header, footer, main {
+	background-color: gray;
+	box-shadow: 0px 0px 15px rgba(0,0,0,.2);
+	padding: 15px;
+}
+header { text-transform: uppercase; font-size: 30px; line-height: 100px; font-weight: bold; margin-bottom: 15px; text-align: center;}
+footer { font-size: 16px; margin-top: 15px; text-align: center;}
+
+nav	{
+	padding: 25px;
+	background-color: #1A3E40;
+	text-align: center;
+	color: #eee;
+}
+
+article {
+	background-color: white;
+	padding: 25px;
+}
+article > p {
+	background-color: #DDD;
+	padding: 20px;
+	font-size: 12px;
+	line-height: 20px;
+}
+.leadin {
+	background-color: #fff;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 3px 10px;
+}
+h1, h2 { margin: 0px 0px 10px; }
+
+/*-------------------------------------
+| Cleafix Hack
+| cf + tab
+| Add to your external CSS
+| http://nicolasgallagher.com/micro-clearfix-hack/
+-------------------------------------*/
+.cf:before, .cf:after { content: " "; display: table; }
+.cf:after { clear: both; }
+.cf { *zoom: 1; }
+
+/*-------------------------------------
+| Boxes
+-------------------------------------*/
+.box {
+	/*keep the border within the box width and height*/
+	box-sizing: border-box;
+	width: 100px;
+	line-height: 80px;
+	/*a nice trick to have it blend with the background.*/
+	border: solid 10px rgba(50, 50, 50, .5);
+	background-color: white;
+	text-align: center;
+	background-color: black;
+	color: white;
+	/*margin: 5px;*/
+}
+.box1 { background-color: darkred; }
+.box2 { background-color: DarkGreen; }
+.box3 { background-color: Teal; }
+.box4 { background-color: SaddleBrown; }
+.box5 { background-color: MidnightBlue; }
+.box6 { background-color: MediumVioletRed; }
+
+.taller {
+	line-height: 300px;
+}
