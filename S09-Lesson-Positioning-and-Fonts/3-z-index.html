@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Z-Index :: Floats and Positioning</title>
+		<link rel="stylesheet" href="css/styles.css">
+		<style>
+			article {
+				background-color: silver;
+				/*height: 500px;*/
+				/*position: relative;*/
+			}
+			.box {
+				margin-bottom: 10px;
+				/*position: absolute;*/
+			}
+
+			.box1 { left: 0px; 		top: 0px; 	}
+			.box2 { left: 100px; 	top: 100px; }
+			.box3 { left: 200px; 	top: 200px; }
+
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<header>Z-Index</header>
+			<article>
+				<h1>Article</h1>
+				<div class="box box1">Box 1</div>
+				<div class="box box2">Box 2</div>
+				<div class="box box3">Box 3</div>
+			</article>
+			<footer>Footer</footer>
+		</div>
+	</body>
+</html>
