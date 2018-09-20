@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Fade</title>
+		<link rel="stylesheet" href="./css/styles.css">
+		<style>
+			body { background-color: #56728f; }
+
+			.fade .set {
+				border: solid 20px #ffffff;
+				margin: 25px;
+				width: 700px;
+			}
+			.fade .set img.color {
+				opacity: 0;
+				transition: opacity 3s;
+			}
+			.fade .set img.color.reveal {
+				opacity: 1;
+			}
+
+		</style>
+		<script>
+			function loading (){
+				var colorImages = document.querySelectorAll("img.color");
+
+				colorImages[0].addEventListener("mouseover", function(){
+					colorImages[0].classList.add("reveal");
+				});
+				colorImages[0].addEventListener("mouseout", function(){
+					colorImages[0].classList.remove("reveal");
+				});
+				colorImages[1].addEventListener("mouseover", function(){
+					colorImages[1].classList.add("reveal");
+				});
+				colorImages[1].addEventListener("mouseout", function(){
+					colorImages[1].classList.remove("reveal");
+				});
+				colorImages[2].addEventListener("mouseover", function(){
+					colorImages[2].classList.add("reveal");
+				});
+				colorImages[2].addEventListener("mouseout", function(){
+					colorImages[2].classList.remove("reveal");
+				});
+				colorImages[3].addEventListener("mouseover", function(){
+					colorImages[3].classList.add("reveal");
+				});
+				colorImages[3].addEventListener("mouseout", function(){
+					colorImages[3].classList.remove("reveal");
+				});
+				colorImages[4].addEventListener("mouseover", function(){
+					colorImages[4].classList.add("reveal");
+				});
+				colorImages[4].addEventListener("mouseout", function(){
+					colorImages[4].classList.remove("reveal");
+				});
+				colorImages[5].addEventListener("mouseover", function(){
+					colorImages[5].classList.add("reveal");
+				});
+				colorImages[5].addEventListener("mouseout", function(){
+					colorImages[5].classList.remove("reveal");
+				});
+
+
+
+
+			}
+			window.onload = loading;
+		</script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<h1>Fade</h1>
+
+			<div class="fade">
+
+				<div class="set">
+					<img class="gray" src="./img/gray/candle.jpg">
+					<img class="color" src="./img/color/candle.jpg">
+				</div>
+
+				<div class="set">
+					<img class="gray" src="./img/gray/flame.jpg">
+					<img class="color" src="./img/color/flame.jpg">
+				</div>
+
+				<div class="set">
+					<img class="gray" src="./img/gray/rings.jpg">
+					<img class="color" src="./img/color/rings.jpg">
+				</div>
+
+				<div class="set">
+					<img class="gray" src="./img/gray/subway.jpg">
+					<img class="color" src="./img/color/subway.jpg">
+				</div>
+
+				<div class="set">
+					<img class="gray" src="./img/gray/water.jpg">
+					<img class="color" src="./img/color/water.jpg">
+				</div>
+
+				<div class="set">
+					<img class="gray" src="./img/gray/yelling.jpg">
+					<img class="color" src="./img/color/yelling.jpg">
+				</div>
+
+			</div>
+		</div>
+
+		<script>
+			// our scripts go here.
+		</script>
+
+	</body>
+</html>

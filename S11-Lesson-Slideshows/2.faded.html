@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Faded :: Slideshows</title>
+
+		<link rel="stylesheet" href="css/styles.css">
+		<style>
+			.faded {
+				width: 600px;
+				height: 300px;
+				position: relative;
+			}
+			.faded img {
+				position: absolute;
+				left: 0px; top: 0px;
+				opacity: 1;
+				transition: opacity 2s;
+			}
+			.faded img.off {
+				position: absolute;
+				left: 600px; top: 0px;
+				opacity: 0;
+				transition: opacity 0s;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>Faded</header>
+			<main>
+				<div class="faded">
+					<img class="" src="./img/image01.jpg">
+					<img class="off" src="./img/image02.jpg">
+					<img class="off" src="./img/image03.jpg">
+					<img class="off" src="./img/image04.jpg">
+					<img class="off" src="./img/image05.jpg">
+				</div>
+			</main>
+			<footer>Slideshows &copy; 2017. All rights reserved.</footer>
+		</div>
+		<script>
+			var current = 0;
+			var next = 1;
+			var theSlides = document.querySelectorAll('.faded img');
+
+			console.log(theSlides);
+
+			function gotnextImage() {
+				var currImage = theSlides[current];
+				var nextImage = theSlides[next];
+
+				nextImage.classList.remove("off");
+				currImage.classList.add("off");
+
+				current = current + 1;
+				if (current > 4) {current = 0}
+				next = next + 1;
+				if (next > 4) {next = 0}
+				console.log(current, next);
+
+				setTimeout(gotnextImage, 3000);
+			}
+
+			setTimeout(gotnextImage,3000);
+		</script>
+		<script>
+
+		</script>
+	</body>
+</html>

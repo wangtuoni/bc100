@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Hover :: mouseover and mouseout</title>
+		<link rel="stylesheet" href="./css/styles.css">
+		<style>
+			body { background-color: #467747; }
+		</style>
+		<script>
+			function waitforit(){
+				var images = document.querySelectorAll("div.rollover img");
+				console.log(images);
+				console.log(images[0]);
+
+				images[0].addEventListener("mouseover", function(){ images[0].src="./img/color/candle.jpg";
+				});
+				images[0].addEventListener("mouseout", function(){ images[0].src="./img/gray/candle.jpg";
+				});
+				images[1].addEventListener("mouseover", function(){ images[1].src="./img/color/flame.jpg";
+				});
+				images[1].addEventListener("mouseout", function(){ images[1].src="./img/gray/flame.jpg";
+				});
+				images[2].addEventListener("mouseover", function(){ images[2].src="./img/color/rings.jpg";
+				});
+				images[2].addEventListener("mouseout", function(){ images[2].src="./img/gray/rings.jpg";
+				});
+				images[3].addEventListener("mouseover", function(){ images[3].src="./img/color/subway.jpg";
+				});
+				images[3].addEventListener("mouseout", function(){ images[3].src="./img/gray/subway.jpg";
+				});
+				images[4].addEventListener("mouseover", function(){ images[4].src="./img/color/water.jpg";
+				});
+				images[4].addEventListener("mouseout", function(){ images[4].src="./img/gray/water.jpg";
+				});
+				images[5].addEventListener("mouseover", function(){ images[5].src="./img/color/yelling.jpg";
+				});
+				images[5].addEventListener("mouseout", function(){ images[5].src="./img/gray/yelling.jpg";
+				});
+
+
+
+
+				}
+
+			window.onload = waitforit;
+		</script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<h1>Hover :: mouseover and mouseout</h1>
+
+			<div class="rollover">
+				<img src="./img/gray/candle.jpg">
+				<img src="./img/gray/flame.jpg">
+				<img src="./img/gray/rings.jpg">
+				<img src="./img/gray/subway.jpg">
+				<img src="./img/gray/water.jpg">
+				<img src="./img/gray/yelling.jpg">
+			</div>
+		</div>
+
+		<script>
+			// our scripts go here.
+		</script>
+	</body>
+</html>

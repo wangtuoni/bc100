@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Remote Exchange</title>
+		<link rel="stylesheet" href="./css/styles.css">
+		<style>
+			body { background-color: #a13636; }
+		</style>
+		<script>
+			function timbuktu() {
+
+				console.log("hello");
+
+				var bigImage = document.querySelector('img.large');
+				console.log(bigImage);
+
+				var smallImges = document.querySelectorAll('div.gallery img');
+				console.log(smallImges);
+
+				smallImges[0].addEventListener("mouseover", function(){ bigImage.src="./img/large/1.jpg";
+				});
+				smallImges[1].addEventListener("mouseover", function(){ bigImage.src="./img/large/2.jpg";
+				});
+				smallImges[2].addEventListener("mouseover", function(){ bigImage.src="./img/large/3.jpg";
+				});
+				smallImges[3].addEventListener("mouseover", function(){ bigImage.src="./img/large/4.jpg";
+				});
+				smallImges[4].addEventListener("mouseover", function(){ bigImage.src="./img/large/5.jpg";
+				});
+				smallImges[5].addEventListener("mouseover", function(){ bigImage.src="./img/large/6.jpg";
+				});
+			}
+
+
+			window.onload = timbuktu;
+		</script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<h1>Remote Exchange</h1>
+
+			<div class="swap">
+				<img class="large" src="./img/large/1.jpg">
+				<div class="gallery">
+					<img src="./img/small/1.jpg">
+					<img src="./img/small/2.jpg">
+					<img src="./img/small/3.jpg">
+					<img src="./img/small/4.jpg">
+					<img src="./img/small/5.jpg">
+					<img src="./img/small/6.jpg">
+				</div>
+			</div>
+		</div>
+
+		<script>
+			// our scripts go here.
+		</script>
+	</body>
+</html>

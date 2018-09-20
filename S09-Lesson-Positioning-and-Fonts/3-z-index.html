@@ -6,17 +6,18 @@
 		<style>
 			article {
 				background-color: silver;
-				/*height: 500px;*/
+				height: 500px;
+				position: relative;
 				/*position: relative;*/
 			}
 			.box {
 				margin-bottom: 10px;
-				/*position: absolute;*/
+				position: absolute;
 			}
 
-			.box1 { left: 0px; 		top: 0px; 	}
-			.box2 { left: 100px; 	top: 100px; }
-			.box3 { left: 200px; 	top: 200px; }
+			.box1 { left: 0px; 		top: 0px; 	 z-index: 1}
+			.box2 { left: 50px; 	top: 50px;  z-index: 3}
+			.box3 { left: 100px; 	top: 100px;  z-index: 2}
 
 		</style>
 	</head>

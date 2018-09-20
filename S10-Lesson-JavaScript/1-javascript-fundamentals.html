@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScript Fundamentals</title>
+
+        <script>
+            alert("hello");
+            console.log("hello guys");
+
+            function whenPageLoads() {
+                var myHeading = document.querySelector("h1");
+                console.log(myHeading);
+                myHeading.style.backgroundColor ="orange";
+            }
+
+            window.onload = whenPageLoads;
+        </script>
+    </head>
+    <body>
+        <h1>JavaScript Fundamentals</h1>
+    </body>
+</html>
