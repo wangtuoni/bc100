@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>JS Syntax</title>
+        <style>
+            .showhide{
+                background-color: yellow;
+                padding: 20px;
+                text-align: center;
+                width: 200px;
+                margin:auto;
+            }
+
+            .hiden{
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>JS Syntax</h1>
+
+        <div class="showhide">hello</div>
+
+        <script>
+            //alert("alert to star");
+            var str1='my dog\'s name is';
+            var str2=' punkin';
+            console.log(str1+str2);
+
+            var str1=200;
+            var str2=300;
+            console.log(str1+str2);
+
+            function walkmydog(hello,say){/*括号内的值在下面function启动时可以替换*/
+                console.log('i walked my dog today '+hello+' '+say+'');
+            }
+            walkmydog('hi',  'nihao');/*hi要有引号*/
+
+            //named function
+            function ihaveaname(){console.log('named');}
+            ihaveaname();
+
+            //anonymous function
+            //assigned to variable
+            var varanon = function(){console.log('anonymous');}
+            varanon();
+
+            //passing function to function
+            function doanonfunc(timbukthree){
+                timbukthree();
+            }
+            doanonfunc(varanon);
+            doanonfunc(function(){
+                console.log('anonymous inline');
+            });
+
+            /*-------------------------------------
+            | variables and function
+            -------------------------------------*/
+            var outside = 1;
+            console.log(outside);
+
+            function testvariables(){
+                var inside = 2;  //this is scoped to this function
+                console.log(inside);
+                console.log(outside);
+            }
+
+            //the following is not accessible outside the function
+            //console.log(inside);
+
+            testvariables();
+
+            //例子
+            var h1 = document.querySelector('h1');
+            var showbox = document.querySelector('.showhide');
+
+            h1.addEventListener('mouseover', function(){
+                showbox.classList.add('hiden');
+            })
+            h1.addEventListener('mouseout', function(){
+                showbox.classList.remove('hiden');
+            })
+
+        </script>
+    </body>
+</html>
