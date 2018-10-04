@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>syntax simple</title>
+    </head>
+    <body>
+        <h1>syntax simple</h1>
+        <script>
+            // ajflajflaj
+            //single line comments
+            console.log('hello');
+            // strings
+            var str1 = 'my name is';
+            var str2 = ' wang xu';
+            var str3 = ' how are you?'
+
+            str2 = str2 + ' HI';
+
+            console.log(str1 + str2 +str3);
+            // number
+
+
+
+            //functions
+            //declaration technique 1:nemed function
+            function walk() {
+                console.log('wang xu');
+            }
+            //function call which executes the function
+            walk();
+
+            //declaration technique 2: anonymous assignment to variable
+            var run = function(){
+                console.log('wangxu123');
+            }
+            //function call which executes the function
+            run();
+
+            //passing arguments to functions
+            function addme(name,age){
+                console.log(name + age);
+            }
+            addme('wangxu',' 28 years old');
+            addme('mitch', ' 40 years old');
+            addme('liuyuxin', ' 26 years old');
+
+            //passing functions to functons as arguments
+            function anyword(shenmedoukeyi){
+                shenmedoukeyi();
+            }
+
+            anyword(walk);
+            anyword(run);
+            //anonymous example
+            anyword(function(){
+                console.log('woshiyigelizi');
+            })
+        </script>
+    </body>
+</html>
